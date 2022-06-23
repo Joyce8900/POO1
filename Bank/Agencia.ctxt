@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Agencia
+comment1.params=codigo
+comment1.target=void\ setCodigo(int)
+comment10.params=
+comment10.target=void\ manutencaoCorrente()
+comment2.params=
+comment2.target=int\ getCoidgo()
+comment3.params=contas
+comment3.target=void\ setConta(java.util.ArrayList)
+comment4.params=
+comment4.target=java.util.ArrayList\ getConta()
+comment5.params=
+comment5.target=double\ total()
+comment6.params=
+comment6.target=java.util.List\ devedores()
+comment7.params=date
+comment7.target=java.util.List\ aniversariante(java.lang.String)
+comment8.params=
+comment8.target=void\ rend()
+comment9.params=
+comment9.target=void\ manutencao()
+numComments=11
