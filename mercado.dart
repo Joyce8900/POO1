@@ -5,14 +5,11 @@ void main(){
 class Venda{
     final DataTime data;
     List<Item> itens = [];
-    double soma = 0;
+    
 
     double total(){
-        for (Item in itens){
-            double soma +=Item;
-        }
-        return soma;
-    }
+      double soma =  itens.fold(0,(value, element) => value + element.total());
+      return soma;
     Venda(this.data);
 
     void setItem(double quantidade, Produto produto){
@@ -20,8 +17,12 @@ class Venda{
         itens.add(item);
 
     }
-}
+}}
+class DataTime{
 
+  DateTime now = DateTime.now();
+  
+}
 class Item{
     final double quantidade;
     Produto produto;
