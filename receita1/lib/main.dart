@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+
 
 void main() {
   runApp(
@@ -14,19 +16,28 @@ void main() {
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(height: 50), 
+            children: <Widget>[
+              CachedNetworkImage(
+                imageUrl: 'https://via.placeholder.com/350x150',
+                placeholder: (context, url) => CircularProgressIndicator(),
+                errorWidget: (context, url, error) => Icon(Icons.error),
+                fadeInDuration: Duration(milliseconds: 500),
+              ),
+              Container(
+                child: Text("Parque"),
+              ),
+              SizedBox(height: 50),
               Expanded(
                 child: ElevatedButton(
                   onPressed: (){},
                   child: Text(
                     "Botão 01",
                     style: TextStyle(
-                      fontSize: 20, 
-                      fontFamily: 'Roboto', 
+                      fontSize: 20,
+                      fontFamily: 'Roboto',
                       fontWeight: FontWeight.bold,
-                      fontStyle: FontStyle.italic, 
-                      color: Colors.white, 
+                      fontStyle: FontStyle.italic,
+                      color: Colors.white,
                     ),
                   ),
                   style: ButtonStyle(
@@ -40,7 +51,6 @@ void main() {
                 child: IconButton(
                   icon: Icon(Icons.favorite),
                   onPressed: () {},
-                  color: Colors.black,
                   iconSize: 40,
                 ),
               ),
