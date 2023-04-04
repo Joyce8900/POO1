@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-
 
 void main() {
   runApp(
@@ -16,16 +14,7 @@ void main() {
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              CachedNetworkImage(
-                imageUrl: 'https://via.placeholder.com/350x150',
-                placeholder: (context, url) => CircularProgressIndicator(),
-                errorWidget: (context, url, error) => Icon(Icons.error),
-                fadeInDuration: Duration(milliseconds: 500),
-              ),
-              Container(
-                child: Text("Parque"),
-              ),
+            children:[
               SizedBox(height: 50),
               Expanded(
                 child: ElevatedButton(
@@ -53,6 +42,28 @@ void main() {
                   onPressed: () {},
                   iconSize: 40,
                 ),
+              ),
+              SizedBox(height: 50),
+              Image.network(
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-GIkHyzeKbrGUEt_f4DXVu4MpPz0X4AGHqUsC0Puj&s',
+                width: 200,
+                height: 200,
+                fit: BoxFit.cover,
+                loadingBuilder: (BuildContext context, Widget child, ImageChunkEvent? loadingProgress) {
+                  if (loadingProgress == null) {
+                    return child;
+                  }
+                  return Center(
+                    child: CircularProgressIndicator(
+                      value: loadingProgress.expectedTotalBytes != null
+                          ? loadingProgress.cumulativeBytesLoaded / loadingProgress.expectedTotalBytes!
+                          : null,
+                    ),
+                  );
+                },
+                errorBuilder: (BuildContext context, Object exception, StackTrace? stackTrace) {
+                  return Text('Imagem indisponível');
+                },
               ),
             ],
           ),
