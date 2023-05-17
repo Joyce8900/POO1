@@ -37,9 +37,9 @@ class DataService {
 
   void carregarCafes() {
     tableStateNotifier.value = [
-      {"name": "Santa Clara", "quality": "razoavel", "note": "10"},
-      {"name": "Marata", "quality": "ruim", "note": "2"},
-      {"name": "Serido", "quality": "horrivel", "note": "0"}
+      {"name": "Santa Clara", "quality": "Boa", "note": "7"},
+      {"name": "Sao Braz", "quality": "Razoavel", "note": "5"},
+      {"name": "Serido", "quality": "Pessimo", "note": "0"}
     ];
     columnNamesNotifier.value = ["Nome", "Qualidade", "Nota Pessoal"];
     propertyNamesNotifier.value = ["name", "quality", "note"];
@@ -47,9 +47,9 @@ class DataService {
 
   void carregarNacoes() {
     tableStateNotifier.value = [
-      {"name": "Brasil", "style": "Samba", "ping": "10"},
+      {"name": "Brasil", "style": "Sertanejo", "ping": "10"},
       {"name": "EUA", "style": "Rock", "ping": "3"},
-      {"name": "Nova Zelandia", "style": "blues", "ping": "8"}
+      {"name": "Nova Zelandia", "style": "Jazz", "ping": "8"}
     ];
     columnNamesNotifier.value = ["Nome", "Estilo Musical", "Nota da Pinga"];
     propertyNamesNotifier.value = ["name", "style", "ping"];
