@@ -1,4 +1,4 @@
-mport 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(
@@ -14,11 +14,11 @@ void main() {
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children:[
+            children: [
               SizedBox(height: 50),
               Expanded(
                 child: ElevatedButton(
-                  onPressed: (){},
+                  onPressed: () {},
                   child: Text(
                     "Botão 01",
                     style: TextStyle(
@@ -31,7 +31,7 @@ void main() {
                   ),
                   style: ButtonStyle(
                     fixedSize: MaterialStateProperty.all(Size.fromHeight(50)),
-                    shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.zero))
+                    shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.zero)),
                   ),
                 ),
               ),
@@ -71,3 +71,4 @@ void main() {
       ),
     ),
   );
+}
