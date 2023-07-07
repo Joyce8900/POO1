@@ -10,4 +10,4 @@
 - Receita 7: https://z04c06lr04d0.zapp.page/#/
 - Receita 8: https://zb4k06ilb4l0.zapp.page/#/
 - Receita 8A: https://zf3o06vtf3p0.zapp.page/#/
-- 
+- Receita 10c: https://zv4a06z5v4b0.zapp.page/#/
