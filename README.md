@@ -1,6 +1,6 @@
 # POO1
 ## Guia de acesso:
-
+- Tarefa 1: https://replit.com/@JOYCESANTOS4/InfatuatedCookedFunnel#main.py
 - Receita 1: https://z74806947490.zapp.page/#/
 - Receita 2: https://z84206bd8430.zapp.page/#/
 - Receita 3: https://zp3s06dyp3t0.zapp.page/#/
