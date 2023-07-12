@@ -11,3 +11,4 @@
 - Receita 8: https://zb4k06ilb4l0.zapp.page/#/
 - Receita 8A: https://zf3o06vtf3p0.zapp.page/#/
 - Receita 10c: https://zs7s06mss7t0.zapp.page#/
+- Receita 10d: https://zapp.run/edit/flutter-zdgo060ufgp0?entry=lib/main.dart&file=lib/main.dart
